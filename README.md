@@ -1,6 +1,6 @@
 # **DENV reference-based assembly**<br/>
 This script is a custom pipeline to perform referenced-based assembly of trimmed / filtered FASTQ files <br/>
-by Majo Galarion
+by **M Galarion**
 
 
 <br/>
