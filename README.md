@@ -25,7 +25,7 @@ For example:
 minimap2 = "minimap2"
 samtools = "samtools"
 bcftools = "bcftools"
-medaka = ".~/medaka/venv/bin/activate"
+medaka = ". ~/medaka/venv/bin/activate"
 
 ```
 The tool definition inside the quotation marks should correspond to how you call them in your current system<br/>
