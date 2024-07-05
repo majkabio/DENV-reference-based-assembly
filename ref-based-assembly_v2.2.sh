@@ -32,7 +32,7 @@ prinseq="prinseq-lite.pl"
 minimap2="minimap2"
 samtools="samtools"
 bcftools="bcftools"
-medaka=".~/medaka/venv/bin/activate"
+medaka=". ~/medaka/venv/bin/activate"
 
 # Takes a non-compressed, concatenated FASTQ file
 
