@@ -56,15 +56,10 @@ bash ref-based-assembly_v2.2.sh -i reads.fastq -r reference.fasta
 ### To print options and default values:
 ```
 
-bash ref-based-assembly_v2.X.sh
+bash ref-based-assembly_v2.2.sh
 
-
-### This will print the following
-
-Reference-based assembly for metagenomics dataset
-
-Usage /home3/2509094g/bash-scripts/ref-based-assembly_v2.2.sh -i reads.fastq -r reference.fasta
-
+```
+```
 Optional parameters:
 -t: number of threads (default: 8)
 -M: Medaka polishing model (default: r941_min_hac_g507m)
@@ -72,5 +67,4 @@ Optional parameters:
 -x: maximum read length (default: none)
 -d: minimum read depth (default: 20)
 -q: minimum read Q-score (default: 9)
-
 ```
