@@ -147,7 +147,7 @@ echo "";
 echo "";
 echo -e "\033[32m Step 4/7: Extract mapped-only reads...\033[0m"
 echo "";
-	${samtools} view -@ 8 -b -F 256 ref_based_assembly_${name}/${name}.srt.bam | ${samtools} fastq > ref_based_assembly_${name}/${name}.mapped.fastq
+	${samtools} view -@ 8 -b -F 4 ref_based_assembly_${name}/${name}.srt.bam | ${samtools} fastq > ref_based_assembly_${name}/${name}.mapped.fastq
 
 ### Run medaka to generate a polished consensus
 echo "";
