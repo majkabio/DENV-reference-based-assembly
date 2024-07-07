@@ -198,7 +198,7 @@ do
 	perc_cov_1x=$(awk -v rl=${ref_length} -v rc=${cov_1x} 'BEGIN {print (rc/rl*100)}')
 	cov_20x=$(samtools depth -a -r ${line} ref_based_assembly_${name}/${name}.srt.bam | awk '$3 >=20' | wc -l)
 	perc_cov_20x=$(awk -v rl=${ref_length} -v rc=${cov_20x} 'BEGIN {print (rc/rl*100)}')
-	mean_depth=$(samtools depth -d 0 ref_based_assembly_${name}/${name}.srt.bam | awk '{sum+=$3} END { print sum/NR}')
+	mean_depth=$(samtools depth -d 0 -r ${line} ref_based_assembly_${name}/${name}.srt.bam | awk '{sum+=$3} END { print sum/NR}')
 
 	echo ${line} ${ref_length} ${reads} ${mapped_reads} ${cov_1x} ${perc_cov_1x} ${cov_20x} ${perc_cov_20x} ${mean_depth} | tr " " "\t" > ref_based_assembly_${name}/alignment_stats/${name}-${line}-stats.temp
 done
